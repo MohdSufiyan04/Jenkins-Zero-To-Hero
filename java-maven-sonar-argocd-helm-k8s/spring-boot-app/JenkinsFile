@@ -55,6 +55,7 @@ pipeline {
                 sh '''
                     pwd
                     ls -la
+                    git config --global --add safe.directory /var/jenkins_home/workspace/CICD-demo
                     git status
 
                     git config user.email "mohdsufiyan0408@gmail.com"
